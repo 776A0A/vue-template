@@ -10,9 +10,9 @@ export interface QueryOptions<T extends (...params: any[]) => Promise<any>> {
   preventParallel?: boolean
 }
 
-export function useQueryHelper<ExtraState extends NormalObj>(
+export function useQueryHelper<ExtraState extends O>(
   { beforeRequest, afterRequest, resolveRequest, rejectRequest, init } = {} as {
-    init?: () => NormalObj | undefined
+    init?: () => O | undefined
     beforeRequest?: (state: { state: BaseState & ExtraState }) => void
     resolveRequest?: (data: { state: BaseState & ExtraState; res: any }) => void
     rejectRequest?: (data: { state: BaseState & ExtraState; err: any }) => void

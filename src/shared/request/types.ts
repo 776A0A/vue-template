@@ -25,7 +25,7 @@ export interface Options {
   /**
    * 传入一个函数，可用于返回固定的 headers
    */
-  header?: (config: RequestConfig) => NormalObj | Promise<NormalObj>
+  header?: (config: RequestConfig) => O | Promise<O>
   codes?: {
     /**
      * 请求成功

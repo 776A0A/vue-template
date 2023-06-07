@@ -1,5 +1,5 @@
 type ConvertObjName = <
-  T extends NormalObj,
+  T extends O,
   R extends { readonly [K in keyof T]?: string }
 >(
   originalObj: T,

@@ -38,7 +38,7 @@ declare global {
   type StringOrNumber = string | number
   type Id = string | number
 
-  type NormalObj = Record<keyof any, any>
+  type O = Record<keyof any, any>
 
   type APIMethodReturnType<T extends (...args: any[]) => any> = Awaited<
     ReturnType<T>
@@ -138,8 +138,8 @@ declare global {
 
   type DeepReadonly<T> = {
     readonly [P in keyof T]: T[P] extends object
-      // eslint-disable-next-line @typescript-eslint/ban-types
-      ? T[P] extends Function
+      ? // eslint-disable-next-line @typescript-eslint/ban-types
+        T[P] extends Function
         ? T[P]
         : DeepReadonly<T[P]>
       : T[P]

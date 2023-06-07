@@ -4,7 +4,7 @@
  * @param defaultName - 默认名称，可选
  * @returns
  */
-export function getFilenameFromHeader(headers: NormalObj, defaultName = '') {
+export function getFilenameFromHeader(headers: O, defaultName = '') {
   const fileNameHeader = headers?.['content-disposition']
 
   return fileNameHeader
