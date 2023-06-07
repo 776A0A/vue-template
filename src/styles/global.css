@@ -1,0 +1,13 @@
+.highlight,
+[highlight='true'] {
+  animation: highlight-animation 2s 1;
+}
+
+@keyframes highlight-animation {
+  from {
+    background-color: rgb(250, 245, 148);
+  }
+  to {
+    background-color: white;
+  }
+}
