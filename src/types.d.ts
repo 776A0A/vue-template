@@ -35,11 +35,6 @@ declare global {
    * 后端 websocket 地址
    */
   const __WS_URL__: string | undefined
-  /**
-   * 是否启用 options-api
-   * @default true
-   */
-  const __VUE_OPTIONS_API__: boolean | undefined
 
   type StringOrNumber = string | number
   type Id = string | number
