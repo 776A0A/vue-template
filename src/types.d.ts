@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-types */
 export {}
 
 declare global {
@@ -139,6 +138,7 @@ declare global {
 
   type DeepReadonly<T> = {
     readonly [P in keyof T]: T[P] extends object
+      // eslint-disable-next-line @typescript-eslint/ban-types
       ? T[P] extends Function
         ? T[P]
         : DeepReadonly<T[P]>
