@@ -1,7 +1,7 @@
 import { createPaths } from '@/shared/router-helper'
 import { progress } from '@/shared/tools'
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
-import WorkingInProgress from './components/WorkingInProgress/index.vue'
+import WIP from './components/WIP/index.vue'
 
 export const { routeNames, paths } = createPaths({})
 
@@ -9,22 +9,14 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'layout',
-    component: WorkingInProgress,
+    component: WIP,
     children: [
       {
         path: '',
         name: 'x',
         children: [
-          {
-            path: '',
-            name: 'x',
-            component: WorkingInProgress,
-          },
-          {
-            path: `:id`,
-            name: '',
-            component: WorkingInProgress,
-          },
+          { path: '', name: 'x', component: WIP },
+          { path: `:id`, name: '', component: WIP },
         ],
       },
     ],
