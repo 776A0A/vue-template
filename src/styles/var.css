@@ -1,0 +1,10 @@
+:root {
+  --theme-primary-color: #3d6bd9;
+  --t-pc: var(--theme-primary-color);
+  --theme-primary-active-color: #e9eff9;
+  --t-pac: var(--theme-primary-active-color);
+  --theme-border-color: #e1e1e3;
+  --theme-bg-color: black;
+  --theme-bg-hover-color: #f5f5f5;
+  --t-bg-hc: var(--theme-bg-hover-color);
+}
