@@ -20,13 +20,11 @@
   </div>
 </template>
 
-<script lang="ts">
-export default { name: 'EmptyView' }
-</script>
-
 <script lang="ts" setup>
 import type { HTMLAttributes } from 'vue'
 import EmptyDataSvg from './empty-data.svg?component'
+
+defineOptions({ name: 'EmptyView' })
 
 withDefaults(
   defineProps<{

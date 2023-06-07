@@ -13,12 +13,10 @@
   </div>
 </template>
 
-<script lang="ts">
-export default { name: 'ErrorView' }
-</script>
-
 <script lang="ts" setup>
 import type { HTMLAttributes } from 'vue'
+
+defineOptions({ name: 'ErrorView' })
 
 withDefaults(
   defineProps<{

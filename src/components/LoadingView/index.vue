@@ -4,12 +4,10 @@
   </transition>
 </template>
 
-<script lang="ts">
-export default { name: 'LoadingView' }
-</script>
-
 <script lang="ts" setup>
 import type { HTMLAttributes } from 'vue'
+
+defineOptions({ name: 'LoadingView' })
 
 withDefaults(
   defineProps<{

@@ -9,6 +9,8 @@
 
 <script lang="ts" setup>
 import workingMp4 from './programmer.mp4'
+
+defineOptions({ name: 'WIP' })
 </script>
 
 <style scoped></style>
